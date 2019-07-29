@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字数统计结果</title>
+</head>
+<body>
+
+    <a href="..">回到首页</a>
+    <h3>总字数为{{ count }}</h3>
+    <h3>用户输入的文本：{{ text }}</h3>
+
+    {% for w,c in dict %}
+    {{ w }}--{{ c }}<br>
+    {% endfor %}
+
+</body>
+</html>
